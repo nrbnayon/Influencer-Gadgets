@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Influencer Gadgets</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +24,75 @@
       type="image/x-icon"
     />
     <script
-      src="https://kit.fontawesome.com/6bd26b09aa.js"
+      src="https://kit.fontawesome.com/b848eab2bb.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- -----Header section----- -->
-    <header></header>
+    <header>
+      <nav>
+        <div class="menu-items">
+          <a href="#" class="menu-icon" id="menuIcon"
+            ><i class="fas fa-bars"></i
+          ></a>
+          <div class="menu-lists">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Signup</a>
+            <a href="#">Login</a>
+            <a href="#" class="search"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+
+        <div class="nav-title title-text-color">
+          <h3>Influencer-sHop</h3>
+        </div>
+        <div class="nav-links-container">
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Signup</a>
+            <a href="#">Login</a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          <a href="#" class="shopping-card"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </div>
+      </nav>
+      <section class="banner-container">
+        <div class="banner-texts">
+          <h3 class="banner-title">
+            Start your Journey as <br />
+            Influencer
+          </h3>
+          <p class="banner-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+            vestibulum sed scelerisque eros. Lectus faucibus.
+          </p>
+          <button class="primary-btn">
+            Prebook Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="banner-img">
+          <img src="images/main-camera.png" alt="" />
+        </div>
+      </section>
+    </header>
     <!-- -----Main section----- -->
 
     <main></main>
     <!-- -----Footer section----- -->
     <footer></footer>
+
+    <script>
+      document
+        .getElementById("menuIcon")
+        .addEventListener("click", function () {
+          document.querySelector(".menu-lists").classList.toggle("show-menu");
+        });
+    </script>
   </body>
 </html>
